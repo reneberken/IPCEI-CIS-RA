@@ -1,0 +1,168 @@
+<archimate:model
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="IPCEI-CIS"
+    id="id-1a7b8b9b8b0e44b8a9b8b0e44b8a9b8b"
+    version="5.0.0">
+  <folder
+      name="Strategy"
+      id="id-1b7b8b9b8b0e44b8a9b8b0e44b8a9b8c"
+      type="strategy"/>
+  <folder
+      name="Business"
+      id="id-1c7b8b9b8b0e44b8a9b8b0e44b8a9b8d"
+      type="business"/>
+  <folder
+      name="Application"
+      id="id-1d7b8b9b8b0e44b8a9b8b0e44b8a9b8e"
+      type="application"/>
+  <folder
+      name="Technology &amp; Physical"
+      id="id-1e7b8b9b8b0e44b8a9b8b0e44b8a9b8f"
+      type="technology"/>
+  <folder
+      name="Motivation"
+      id="id-1f7b8b9b8b0e44b8a9b8b0e44b8a9b90"
+      type="motivation"/>
+  <folder
+      name="Implementation &amp; Migration"
+      id="id-207b8b9b8b0e44b8a9b8b0e44b8a9b91"
+      type="implementation_migration"/>
+  <folder
+      name="Other"
+      id="id-217b8b9b8b0e44b8a9b8b0e44b8a9b92"
+      type="other">
+    <element
+        xsi:type="archimate:Grouping"
+        name="Data Space Domain"
+        id="id-dataspace-domain">
+      <documentation>The Data Space Domain defines the context for the data space as a whole. It defines the governance framework, the functional components and the technical infrastructure that are shared by all participants in the data space.</documentation>
+    </element>
+    <element
+        xsi:type="archimate:Grouping"
+        name="Participant Domain"
+        id="id-participant-domain">
+      <documentation>The Participant Domain defines the context for a single participant in the data space. It defines the governance, the functional components and the technical infrastructure that are specific for that participant.</documentation>
+    </element>
+    <element
+        xsi:type="archimate:Grouping"
+        name="Governance Layer"
+        id="id-governance-layer">
+      <documentation>The Governance Layer contains all governance aspects of the data space, like policies, trust, identity and access management and standardization. This layer is based on the governance framework as defined by the Data Governance Act. It defines the rules and regulations for the data space and its participants.</documentation>
+    </element>
+    <element
+        xsi:type="archimate:Grouping"
+        name="Functional Layer"
+        id="id-functional-layer">
+      <documentation>The Functional Layer contains the functional components of the data space. It contains the data services, the data processing and the data usage. This layer provides for the functional capabilities of the data space.</documentation>
+    </element>
+    <element
+        xsi:type="archimate:Grouping"
+        name="Technical Layer"
+        id="id-technical-layer">
+      <documentation>The Technical Layer contains the technical components of the data space. It contains the data storage, the data exchange and the data security. This layer provides for the technical capabilities of the data space.</documentation>
+    </element>
+  </folder>
+  <folder
+      name="Relations"
+      id="id-227b8b9b8b0e44b8a9b8b0e44b8a9b93"
+      type="relations"/>
+  <folder
+      name="Views"
+      id="id-237b8b9b8b0e44b8a9b8b0e44b8a9b94"
+      type="diagrams">
+    <element
+        xsi:type="archimate:ArchimateDiagramModel"
+        name="2.1 View IPCEI-CIS Domain and Layers"
+        id="id-view-domain-layers">
+      <children
+          xsi:type="archimate:DiagramModelGroup"
+          name="Data Space Domain"
+          id="id-view-node-ds-domain"
+          textAlignment="1"
+          fillColor="#ffffff"
+          bounds="20,20,560,400">
+        <archimateElement
+            xsi:type="archimate:Grouping"
+            href="id-dataspace-domain"/>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Governance Layer"
+            id="id-view-node-gov-layer"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,20,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-governance-layer"/>
+        </children>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Functional Layer"
+            id="id-view-node-func-layer"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,140,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-functional-layer"/>
+        </children>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Technical Layer"
+            id="id-view-node-tech-layer"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,260,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-technical-layer"/>
+        </children>
+      </children>
+      <children
+          xsi:type="archimate:DiagramModelGroup"
+          name="Participant Domain"
+          id="id-view-node-part-domain"
+          textAlignment="1"
+          fillColor="#ffffff"
+          bounds="600,20,560,400">
+        <archimateElement
+            xsi:type="archimate:Grouping"
+            href="id-participant-domain"/>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Governance Layer"
+            id="id-view-node-gov-layer-part"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,20,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-governance-layer"/>
+        </children>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Functional Layer"
+            id="id-view-node-func-layer-part"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,140,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-functional-layer"/>
+        </children>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="Technical Layer"
+            id="id-view-node-tech-layer-part"
+            textAlignment="1"
+            fillColor="#d3e3f3"
+            bounds="20,260,520,100">
+          <archimateElement
+              xsi:type="archimate:Grouping"
+              href="id-technical-layer"/>
+        </children>
+      </children>
+    </element>
+  </folder>
+</archimate:model>
